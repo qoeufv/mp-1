@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website showcasing projects part of Pinhan Zhao's online resume.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="projects.css">
+        <title>Projects | Resume</title>
+    </head>
+
+    <body>
+        <div id="page-wrapper">
+            <! -- Header starts-->
+            <header>
+                <h1>Projects</h1>
+            </header>
+            <! -- Header ends-->
+
+            <div id="container">
+                <! -- navigation starts-->
+                <nav>
+                    <ul>
+                        <li><a href="../home/index.html">Home</a></li>
+                        <li><a href="../education/education.html">Education</a></li>
+                        <li><a href="../experience/experience.html">Experience</a></li>
+                        <li><a href="../certifications/certifications.html">Certifications</a></li>
+                        <li><a href="../references/references.html">References</a></li>
+                        <li><a href="../achievements/achievements.html">Achievements</a></li>
+                        <li><a href="../projects/projects.html">Projects</a></li>
+                    </ul>
+                </nav>
+                <! -- navigation ends-->
+
+                <! -- main content starts-->
+                <main>
+                    <header>
+                        <h2 >JavaScript Calculator</h2>
+                    </header>
+
+                    <div id="menu">
+                        <div id="input">
+                            <label for="first-number">First Number: </label><input id="first-number" type="text">
+                            <label for="second-number">Second Number: </label><input id="second-number" type="text">
+                        </div>
+
+                        <div id="buttons">
+                            <button onClick="addition()">+</button>
+                            <button onClick="subtraction()">-</button>
+                            <button onClick="multiplication()">*</button>
+                            <button onClick="division()">/</button>
+                            <button onClick="exponential()">**</button>
+                            <button onClick="erase()">Clear</button>
+                        </div>
+                    </div>
+
+                    <div id="output"></div>
+
+                </main>
+                <! -- main content ends-->
+            </div>
+
+            <! -- footer starts-->
+            <footer>
+                <p>All Rights Reserved By Pinhan Zhao <a href="../credits/credits.html">Credits</a>&copy;</p>
+            </footer>
+            <! -- footer ends-->
+
+            <script src="calc.js"></script>
+        </div>
+    </body>
+</html>

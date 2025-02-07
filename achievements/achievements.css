@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    color: orange;
+    font-size: calc(2px + 1vw);
+    font-family: "Academy Engraved LET", cursive;
+}
+
+header h1 {
+    padding: 2vw;
+}
+
+nav {
+    width: 30%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(5px + 1.5vw);
+    background-color: deepskyblue;
+    padding-left: 0;
+    list-style: none;
+}
+
+nav li {
+    background-color: greenyellow;
+    width: 90%;
+    padding: 0.8vh 0;
+    margin: 2.5vh auto;
+    text-align: center;
+    border: 5px solid purple;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    font-family: "Times New Roman", Times, serif;
+}
+
+main {
+    width: 70%;
+    background-color: cornflowerblue;
+}
+
+main h2 {
+    color: darkred;
+    padding: 2vh;
+    text-align: center;
+    font-size: calc(10px + 2vw);
+}
+
+main p {
+    font-size: calc(10px + 1vw);
+    padding: 3vh;
+    border-left: 5px solid orange;
+    margin: 5%;
+}
+
+footer {
+    background-color: aquamarine;
+    color: red;
+    padding: 3.5vh 1vw;
+}
+
+footer p {
+    padding: 1vh;
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        text-align: center;
+        padding: 2vh;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav li {
+        font-size: calc(4px + 1vw);
+        border: 2px solid purple;
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #page-wrapper {
+        width: 100%;
+    }
+
+    #container {
+        display: block;
+    }
+
+    main {
+        width: 100%;
+        height: 80vh;
+    }
+}
+
